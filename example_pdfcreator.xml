@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/pdfText"
+        android:layout_width="match_parent"
+        android:layout_height="00dp"
+        android:layout_gravity="start"
+        android:layout_weight="0.90"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:hint="Add Text to PDF"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="00dp"
+        android:layout_weight="0.10"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/fileName"
+            android:layout_width="00dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.70"
+            android:hint="File Name"
+            android:padding="05dp"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="00dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.30"
+            android:background="@android:color/holo_red_dark"
+            android:text="Create PDF"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
